@@ -2,18 +2,95 @@
 
 ![BH Bank](https://img.shields.io/badge/BH%20Bank-Banque%20de%20l'Habitat-E31837?style=for-the-badge)
 ![ESPRIT](https://img.shields.io/badge/ESPRIT-Honoris%20United%20Universities-004B87?style=for-the-badge)
+![Auteur](https://img.shields.io/badge/Auteur-HOUIMELI%20Mortadha-000000?style=for-the-badge&logo=github)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Desktop%20%26%20Service-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Angular](https://img.shields.io/badge/Angular-19-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ---
 
-## 📌 Présentation & Contexte du Stage
+## 👤 Informations sur l'Auteur & le Projet
 
-Ce dépôt contient l'intégralité du projet de fin d'études / stage réalisé au sein de la **BH Bank** (Banque de l'Habitat, Tunisie) en partenariat avec l'école d'ingénieurs **ESPRIT** (Honoris United Universities).
+- **Étudiant / Auteur** : **HOUIMELI Mortadha** (*Élève Ingénieur — ESPRIT*)
+- **Organisme d'Accueil** : **BH Bank** (Banque de l'Habitat, Tunisie)
+- **Établissement Académique** : **ESPRIT** (Honoris United Universities)
+- **Sujet** : Tableau de Bord de Monitoring de la Sécurité Bancaire et Conformité KYC
+
+---
+
+## 📌 Présentation & Contexte
+
+Ce projet s'inscrit dans le cadre du stage de fin d'études / projet académique réalisé au sein de la **BH Bank** en partenariat avec **ESPRIT**.
 
 ### 🎯 Objectif Général
 Mettre en place une **solution décisionnelle bout-en-bout (Business Intelligence & Intégration Web)** permettant de surveiller et de monitorer la sécurité des transactions bancaires et la conformité **KYC** (*Know Your Customer*) dans un environnement bancaire simulé, sans dépendre d'une infrastructure ETL lourde ni de base de données relationnelle complexe.
+
+---
+
+## 📸 Aperçu du Tableau de Bord (Captures d'Écran)
+
+### 1. 🏠 Page d'Accueil — Centre de Sécurité & Conformité
+Page d'atterrissage principale avec cartes synthétiques, statuts d'alertes et navigation interactive in-report :
+
+![Page 1 - Accueil BH Bank](docs/screenshots/01_accueil.png)
+
+> **Indicateurs Clés de l'Accueil :**
+> - **4.53M TND** — Montant Transactions Risque Élevé
+> - **78.13%** — Proportion de clients en conformité KYC *(Objectif 90%)*
+> - **153** — Alertes Niveau Élevé nécessitant une revue
+> - **10.08%** — Taux d'échec de connexion (%)
+
+---
+
+### 2. 🛡️ Page Sécurité des Accès
+Monitoring géographique et temporel des tentatives d'accès aux systèmes bancaires :
+
+![Page 2 - Sécurité des Accès](docs/screenshots/02_securite_acces.png)
+
+> **Visualisations :**
+> - **Cartes KPI** : `6K` Connexions totales | `8` Pays à Risque | `605` Échecs | `182` Clients à Risque.
+> - **Carte Thermique** : Cartographie mondiale des connexions suspectes.
+> - **Jauge DAX** : Taux d'échec de connexion (10.08%).
+> - **Graphique d'Évolution** : Échecs de connexion quotidiens (ex: Pic du Jour 20 = 13 échecs).
+
+---
+
+### 3. 🚨 Page Alertes de Sécurité (SIEM)
+Corrélation et exploration multi-niveaux des alertes de sécurité :
+
+![Page 3 - Alertes de Sécurité](docs/screenshots/03_alertes_securite.png)
+
+> **Visualisations :**
+> - **Cartes KPI** : `700` Alertes | `153` Alertes Élevées | `1.00` Alerte/Jour | `-11.76%` Variation.
+> - **Donut Chart** : Répartition par risque (*337 Faible [48.14%], 210 Moyen [30%], 153 Élevé [21.86%]*).
+> - **Tableau Chronologique** : Top 10 des dernières alertes critiques.
+> - **Arbre de Décomposition** : Exploration des alertes (`niveau_risque` ➔ `type_alerte` : 177 suspicions de fraude, 160 comportements anormaux).
+
+---
+
+### 4. 📋 Page Conformité KYC (*Know Your Customer*)
+Audit documentaire, scoring de risque client et statut de validation :
+
+![Page 4 - Conformité KYC](docs/screenshots/04_conformite_kyc.png)
+
+> **Visualisations :**
+> - **Cartes KPI** : `64` Clients Rejetés | `111` Clients en Attente | `32.17` Score Risque Moyen | `860.92K TND` Exposition Risque.
+> - **Jauge de Validation** : Taux de clients conformes à 78.13% *(Cible : 90%)*.
+> - **Bar Chart** : Documents manquants par type (*67 Domicile, 60 Revenu, 48 Pièce d'identité*).
+> - **Matrice de Risque (Nuage de points)** : Montant Total TND vs Score de Risque avec classification par statut KYC.
+
+---
+
+### 5. 💸 Page Transactions à Risque (AML / Anti-Blanchiment)
+Surveillance des flux financiers internationaux et détection des anomalies :
+
+![Page 5 - Transactions à Risque](docs/screenshots/05_transactions_risque.png)
+
+> **Visualisations :**
+> - **Cartes KPI** : `5M TND` Montant à Risque Élevé | `153` Transactions | `mobile` Canal le Plus Risqué | `29.58K TND` Montant Moyen.
+> - **Carte des Destinations** : Flux financiers vers les pays sensibles.
+> - **Courbe Chronologique** : Évolution des montants à risque (Février à Juin 2026).
+> - **Top 5 Pays à Risque** : *Syrie (1.07M TND), Corée du Nord (1.02M TND), Nigeria (0.68M TND), Iran (0.52M TND), Panama (0.43M TND)*.
 
 ---
 
@@ -58,44 +135,11 @@ Les données bancaires ont été générées et structurées sous 4 tables princ
 
 ---
 
-## 🖼️ Description Détaillée des 5 Pages du Tableau de Bord Power BI
+## 🚀 Application Web d'Intégration (Angular + Node.js)
 
-### 1. 🏠 Page d'Accueil (*Centre de Sécurité & Conformité*)
-Page d'atterrissage principale offrant une vue synthétique et consolidée avec des cartes interactives et une barre de navigation en-tête personnalisée :
-- **KPI 1 : 4.53M TND** — Montant Transactions Risque Élevé.
-- **KPI 2 : 78.13%** — Proportion de clients en conformité KYC *(Objectif fixé à 90%)*.
-- **KPI 3 : 153** — Alertes de niveau élevé nécessitant une revue.
-- **KPI 4 : 10.08%** — Taux d'échec de connexion (sous surveillance).
-- **Navigation in-report** : Boutons d'accès direct vers les 4 sections thématiques + Logo BH Bank cliquable.
-
-### 2. 🛡️ Sécurité des Accès
-Analyse approfondie des accès aux systèmes bancaires :
-- **Cartes KPI** : `6K` Connexions totales | `8` Pays à Risque | `605` Échecs | `182` Clients à Risque.
-- **Carte Thermique** : Répartition mondiale des tentatives de connexion par pays.
-- **Jauge DAX** : Taux d'échec de connexion (10.08%).
-- **Graphique Linéaire** : Évolution quotidienne des échecs de connexion (avec identification des pics, ex: Jour 20 = 13 échecs).
-- **Filtres interactifs** : Par pays, niveau de risque, type d'accès (succès/échec) et mois.
-
-### 3. 🚨 Alertes de Sécurité (SIEM)
-Monitoring des événements suspects et de la fraude :
-- **Cartes KPI** : `700` Alertes au total | `153` Alertes Élevées | `1.00` Alerte/Jour (Moyenne) | `-11.76%` Variation hebdomadaire.
-- **Donut Chart** : Répartition par niveau de risque (*337 Faible [48.14%], 210 Moyen [30%], 153 Élevé [21.86%]*).
-- **Tableau Top 10** : Liste chronologique des 10 dernières alertes critiques.
-- **Arbre de Décomposition** : Exploration visuelle multi-niveaux (`niveau_risque` ➔ `type_alerte` : 177 suspicions de fraude, 160 comportements anormaux).
-
-### 4. 📋 Conformité KYC (*Know Your Customer*)
-Audit de la conformité documentaire et du risque client :
-- **Cartes KPI** : `64` Clients Rejetés | `111` Clients en Attente | `32.17` Score de Risque Moyen | `860.92K TND` Exposition Financière à Risque.
-- **Jauge de Conformité** : Taux de clients validés à 78.13% *(Cible : 90%)*.
-- **Bar Chart** : Documents manquants par catégorie (*67 Justificatifs de domicile, 60 Justificatifs de revenu, 48 Pièces d'identité*).
-- **Matrice de Risque Clients (Nuage de points)** : Montant total TND vs Score de risque avec quadrants de seuils.
-
-### 5. 💸 Transactions à Risque (AML / Anti-Blanchiment)
-Surveillance des flux financiers sensibles :
-- **Cartes KPI** : `5M TND` Montant à Risque Élevé | `153` Transactions à Risque | `mobile` Canal le Plus Risqué | `29.58K TND` Montant Moyen par Transaction.
-- **Carte Géographique** : Répartition mondiale des destinations à risque.
-- **Courbe d'évolution** : Chronologie des montants à risque sur la période de Février à Juin 2026.
-- **Top 5 Pays à Risque** : *Syrie (1.07M TND), Corée du Nord (1.02M TND), Nigeria (0.68M TND), Iran (0.52M TND), Panama (0.43M TND)*.
+- **Front-End (`/app`)** : Single-Page Application (SPA) Angular 19 avec composant d'affichage `DashboardComponent`.
+- **Design System** : Charte graphique officielle BH Bank (Rouge `#E31837`, Noir `#1A1A1D`, Blanc) avec en-tête dédié et intégration du rapport Power BI (`autoAuth=true`).
+- **Back-End (`/server`)** : Serveur d'hébergement statique minimal sous Node.js & Express.
 
 ---
 
@@ -103,13 +147,13 @@ Surveillance des flux financiers sensibles :
 
 ```markdown
 ### 🟢 Juillet : Conception, Modélisation & Développement Power BI
-- **01/07** : Accueil à la BH Bank, remise du sujet de stage. Examen ESPRIT l’après-midi.
-- **02/07 - 03/07** : Analyse du sujet et génération des jeux de données bancaires via Mockaroo.
+- **01/07** : Accueil à la BH Bank, remise du sujet de stage par l'encadrant. Examen ESPRIT l’après-midi.
+- **02/07 - 03/07** : Analyse du sujet, discussion sur les améliorations et génération des jeux de données bancaires via Mockaroo.
 - **06/07 - 07/07** : Import Power BI, résolution des relations n:n, typage des dates & création de la première mesure DAX (taux d'échec).
 - **08/07 - 10/07** : Développement de la page *Sécurité des Accès* (jauge, carte, courbe) et présentation à l'encadrant.
-- **13/07 - 15/07** : Test du thème sombre ➔ Ajustement vers le thème clair BH Bank suite aux retours de l'encadrant et ajout de KPIs.
+- **13/07 - 15/07** : Test du thème sombre ➔ Retours encadrant : passage au thème clair BH Bank et ajout de KPIs.
 - **16/07 - 21/07** : Développement de la page *Alertes de Sécurité* (Donut chart, Top 10 critiques, Arbre de décomposition). Validation.
-- **22/07 - 24/07** : Développement de la page *Conformité KYC* (résolution de la granularité du nuage de points) et *Transactions à Risque* (fix carte USA).
+- **22/07 - 24/07** : Développement de la page *Conformité KYC* (correction granularité nuage de points) et *Transactions à Risque* (fix carte USA).
 - **27/07 - 31/07** : Conception de la Page d'Accueil, vérification de la cohérence des totaux et point d'avancement.
 
 ### 🔵 Août : Optimisation, Intégration Web & Clôture
@@ -127,14 +171,21 @@ Surveillance des flux financiers sensibles :
 
 ```
 .
-├── stage bh without etl.pbix   # Fichier officiel Power BI Desktop
-├── app/                        # Application Web Front-End (Angular 19 SPA)
+├── stage bh without etl.pbix   # Fichier source officiel Power BI Desktop
+├── docs/
+│   └── screenshots/            # Captures d'écran des 5 pages du tableau de bord
+│       ├── 01_accueil.png
+│       ├── 02_securite_acces.png
+│       ├── 03_alertes_securite.png
+│       ├── 04_conformite_kyc.png
+│       └── 05_transactions_risque.png
+├── app/                        # Application Front-End Angular 19
 │   ├── src/
 │   │   └── app/
-│   │       └── dashboard/      # Composant d'affichage iframe autoAuth
+│   │       └── dashboard/      # Composant d'intégration du rapport Power BI
 │   └── package.json
-├── server/                     # Serveur Web Back-End (Node.js & Express)
-│   ├── server.js               # Serveur d'hébergement statique
+├── server/                     # Serveur Back-End Express (Node.js)
+│   ├── server.js
 │   └── package.json
 ├── .gitignore
 └── README.md                   # Documentation complète du projet
@@ -142,12 +193,12 @@ Surveillance des flux financiers sensibles :
 
 ---
 
-## ⚙️ Instructions d'Exécution Locale
+## ⚙️ Directives d'Exécution Locale
 
-### 1. Explorer le rapport Power BI Desktop
-Ouvrez directement le fichier **`stage bh without etl.pbix`** avec **Power BI Desktop** pour examiner la modélisation, le modèle relationnel et les formules DAX.
+### 1. Explorer le Rapport Power BI
+Ouvrez le fichier **`stage bh without etl.pbix`** directement avec **Power BI Desktop** pour examiner la modélisation des données, les tables de faits/dimensions, ainsi que les mesures DAX.
 
-### 2. Démarrer l'Application Web d'Intégration
+### 2. Lancer l'Application Web
 
 #### Mode Développement (Angular CLI)
 ```bash
@@ -155,25 +206,25 @@ cd app
 npm install
 npm start
 ```
-*Ouvrez **http://localhost:4200** dans votre navigateur (utilisez **Microsoft Edge** pour assurer la transmission fluide de la session Power BI).*
+*Accédez à **http://localhost:4200** dans votre navigateur (utilisez **Microsoft Edge** pour la gestion optimale des cookies de session Power BI Service).*
 
-#### Mode Serveur Express (Node.js)
+#### Mode Serveur de Production (Node.js & Express)
 ```bash
-# 1. Générer le bundle de production Angular
+# 1. Compiler le build Angular
 cd app
 npm run build
 
-# 2. Lancer le serveur Express
+# 2. Démarrer le serveur Express
 cd ../server
 npm install
 npm start
 ```
-*Ouvrez **http://localhost:3000**.*
+*Accédez à **http://localhost:3000**.*
 
 ---
 
-## 👥 Crédits & Intervenants
+## 👥 Crédits & Remerciements
 
-- **Élève Ingénieur** : Stagiaire ESPRIT
-- **Organisme d'Accueil** : BH Bank (Banque de l'Habitat, Tunisie)
-- **Établissement Académique** : ESPRIT (Honoris United Universities)
+- **Auteur & Stagiaire** : **HOUIMELI Mortadha** (Élève Ingénieur — ESPRIT)
+- **Organisme d'Accueil** : **BH Bank** (Banque de l'Habitat — Tunisie)
+- **Établissement Académique** : **ESPRIT** (Honoris United Universities)
